@@ -116,15 +116,73 @@ html {
     color: gray;
   }
   
+ /*register section*/
+.profileBody{
+  background-color: ##F9F6F6;
+}
+.profileTitle{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  color: #114232;
+}
+
+.profileForm {
+    max-width: 400px;
+    margin: 10px auto;
+    background-color: #114232;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+  
+.profileRegister{
+  color: #fff;
+}
+
+a:link {
+  color: #87A922;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #87A922;
+  background-color: transparent;
+  text-decoration: none;
+  
+  
  
-  
-  
-  
-  
-  
-  
- 
-  
+  /*footer section*/
   footer {
     display: flex;
   }
@@ -295,3 +353,9 @@ html {
   
     
   }
+
+@media screen and (max-width: 600px) {
+  form {
+      max-width: 300px;
+    }
+}
