@@ -8,12 +8,19 @@ html {
     margin: 0;
   }
   
-  
-  
+  /*navbar*/
+
   nav {
     background-color:#f9f6f6;
     color:green;
     padding: 20px 50px;
+  }
+
+    
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .navItem h3{ 
@@ -36,13 +43,6 @@ a:hover{
     text-decoration: underline;
     text-underline-position:under;
 }
-  
-  .navTop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
   .search {
     display: flex;
     align-items: center;
@@ -66,34 +66,11 @@ a:hover{
     
   }
 
-  
   .profile {
     font-size: 20px;
     cursor: pointer;
-    
   }
 
-  .searchh{
-    height: 25px;
-    width: 22px;
-    padding-left: 5px;
-    padding-top: 15px;
-    background: #f9f6f6;
-
-  }
-  
-  .navBottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menuItem {
-    margin-right: 50px;
-    cursor: pointer;
-    color: black;
-    font-weight: 400;
-  }
   
   .slider {
     background-color: black;
@@ -146,6 +123,67 @@ a:hover{
     text-align: center;
     font-style: 24px;
     color: gray;
+  }
+
+  /*footer sectio*/
+
+  footer {
+    display: flex;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .fMenuTitle {
+    font-size: 16px;
+  }
+  
+  .fList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fInput {
+    padding: 5px;
+  }
+  
+  .fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  .fIcons{
+    display: flex;
+  }
+  
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
   }
 
   
@@ -213,184 +251,4 @@ a:visited {
   color: #87A922;
   background-color: transparent;
   text-decoration: none;
-  
-  
- 
-  /*footer section*/
-  footer {
-    display: flex;
-  }
-  
-  .footerLeft {
-    flex: 2;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-  }
-  
-  .fMenuTitle {
-    font-size: 16px;
-  }
-  
-  .fList {
-    padding: 0;
-    list-style: none;
-  }
-  
-  .fListItem {
-    margin-bottom: 10px;
-    color: gray;
-    cursor: pointer;
-  }
-  
-  .footerRight {
-    flex: 1;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .fInput {
-    padding: 5px;
-  }
-  
-  .fButton {
-    padding: 5px;
-    background-color: black;
-    color: white;
-  }
-  
-  .fIcons{
-    display: flex;
-  }
-  
-  .fIcon{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  .copyright{
-    font-weight: 300;
-    font-size: 14px;
-  }
-  
-  @media screen and (max-width:480px) {
-    nav{
-      padding: 20px;
-    }
-  
-    .search{
-      display: none;
-    }
-  
-    .navBottom{
-      flex-wrap: wrap;
-    }
-  
-    .menuItem{
-      margin: 20px;
-      font-weight: 700;
-      font-size: 20px;
-    }
-  
-    .slider{
-      clip-path: none;
-    }
-  
-    .sliderImg{
-      width: 90%;
-    }
-  
-    .sliderBg{
-      width: 100%;
-      height: 100%;
-    }
-  
-    .sliderTitle{
-      display: none;
-    }
-  
-    .sliderPrice{
-      top: unset;
-      bottom: -50;
-      left: 0;
-      background-color: lightgrey;
-    }
-  
-    .buyButton{
-      right: 0;
-      top: 0;
-    }
-  
-    .features{
-      flex-direction: column;
-    }
-  
-    .product{
-      clip-path: none ;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .productImg{
-      width: 80%;
-      background: black;
-    }
-  
-    .productDetails{
-      width: 100%;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      top: 0;
-    }
-  
-    .productTitle{
-      font-size: 50px;
-      margin: 0;
-    }
-  
-    .gallery{
-      display: none;
-    }
-  
-    .newSeason{
-      flex-direction: column;
-    }
-  
-    .nsItem:nth-child(2){
-      padding: 50px;
-    }
-  
-    footer{
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .footerLeft{
-      padding: 20px;
-      width: 90%;
-    }
-  
-    .footerRight{
-      padding: 20px;
-      width: 90%;
-      align-items: center;
-      background-color: whitesmoke;
-    }
-  
-    
-  }
-
-@media screen and (max-width: 600px) {
-  form {
-      max-width: 300px;
-    }
-}
 }
