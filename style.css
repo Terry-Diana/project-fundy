@@ -8,12 +8,19 @@ html {
     margin: 0;
   }
   
-  
-  
+  /*navbar*/
+
   nav {
-    background-color: #f9f6f6;
+    background-color:#f9f6f6;
     color:green;
     padding: 20px 50px;
+  }
+
+    
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .navItem h3{ 
@@ -36,18 +43,11 @@ a:hover{
     text-decoration: underline;
     text-underline-position:under;
 }
-  
-  .navTop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
   .search {
     display: flex;
     align-items: center;
     background-color:whitesmoke;
-    border: 1px solid black;
+    border: none;
   }
   
   .searchInput {
@@ -60,40 +60,17 @@ a:hover{
   }
 
   .searchIcon{
-    padding-right: 5px;
+    padding-left: 10px;
     height: 15px;
     width: 15px;
     
   }
 
-  
   .profile {
     font-size: 20px;
     cursor: pointer;
-    
   }
 
-  .searchh{
-    height: 25px;
-    width: 22px;
-    padding-left: 5px;
-    padding-top: 15px;
-    background: #f9f6f6;
-
-  }
-  
-  .navBottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menuItem {
-    margin-right: 50px;
-    cursor: pointer;
-    color: black;
-    font-weight: 400;
-  }
   
   .slider {
     background-color: black;
@@ -148,11 +125,72 @@ a:hover{
     color: gray;
   }
 
+  /*footer sectio*/
+
+  footer {
+    display: flex;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .fMenuTitle {
+    font-size: 16px;
+  }
+  
+  .fList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fInput {
+    padding: 5px;
+  }
+  
+  .fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  .fIcons{
+    display: flex;
+  }
+  
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+  }
+
   
   
  /*register section*/
 .profileBody{
-  background-color: ##F9F6F6;
+  background-color: #F9F6F6;
 }
 .profileTitle{
   font-size: 50px;
@@ -451,3 +489,4 @@ input[type="number"] {
       max-width: 300px;
     }
 }
+
