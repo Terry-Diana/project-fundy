@@ -16,14 +16,16 @@
         <input type="email" id="email" name="email" required><br>
         
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
+        <input type="password" id="password" name="password" minlength="3" maxlength="18" title="Must contain at least and at least 3 or more characters" required><br>
         
         <label for="confirmPassword">Confirm Password:</label><br>
         <input type="password" id="confirmPassword" name="confirmPassword" required><br>
         
-        <button type="submit">Register</button>
+        <button type="submit" id="profileButton">Register</button>
         <p class="profileRegister">Already registered? <a href="login.html">Login</a></p>
     </form>
 
+    <script src="index.js"></script>
 </body>
 </html>
+
