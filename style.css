@@ -152,7 +152,7 @@ a:hover{
   
  /*register section*/
 .profileBody{
-  background-color: ##F9F6F6;
+  background-color: #F9F6F6;
 }
 .profileTitle{
   font-size: 50px;
@@ -392,4 +392,5 @@ a:visited {
   form {
       max-width: 300px;
     }
+}
 }
